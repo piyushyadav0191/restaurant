@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TAKATAK WORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./index.js"></script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = {
+                lat: 23.244528,
+                lng: 77.4085591
+            };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <section class="home" id="top">
+        <div class="container">
+            <!-- Sidebar -->
+            <aside class="container__sidebar">
+                <div class="mainphoto py-5"><img src="photo.jpg " class="photo"></div>
+                <h1 class="heading"> TAKATAK WORLD</h1>
+                <p> <span style="color: black; font-size: larger; font-weight: bolder;">MANAGER</span>: <span style="color: black; font-size: large;">Piyush Yadav</span><br>
+                    <h3>staff :</h3>
+                    <ol>
+                        <li>piyush yadav</li>
+                        <li>piyush yadav</li>
+                        <li>piyush yadav</li>
+                        <li>piyush yadav</li>
+                    </ol>
+
+
+
+                </p>
+
+            </aside>
+
+            <!-- Main -->
+            <main class="container__main">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                    <a class="navbar-brand" href="#">TAKATAK</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#menu">MENU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#order">ORDER ONLINE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#location">LOCATION</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-lg-6 py-5">
+                            <h1 class="nameheading "> TAKATAK WORLD <br> <span class="para">Fastest growing restaurant</span>
+
+                            </h1>
+
+                            <p class="description py-3">I'm a Piyush Yadav, owner of this restaurent and i am glad you are here to do something with my restaurent.</p>
+                            <div class="container">
+                                <div class="buttons">
+                                    <a href="#contact" class="example_e"> MENU </a>
+                                    <a href="#contact" class="example_e1"> ORDER ONLINE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="material/photo/piyushgif.gif" class="img-fluid" id="gif" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </main>
+        </div>
+    </section>
+    <section class="menu  py-5" id="menu">
+
+        <div class="text-center">
+            <h1>MENU </h1>
+        </div>
+
+        <div class="cards">
+            <!-- A card with given width -->
+            <div class="cards__item">
+                <img src="pizza.jpg">
+                <p>pizza at 300</p>
+            </div>
+
+            <!-- Repeat other cards -->
+            <div class="cards__item">
+                <img src="burger.jpg">
+                <p>burger at 230</p>
+            </div>
+            <div class="cards__item">
+                <img src="chicken.jpg">
+                <p>chicken at 250</p>
+            </div>
+            <div class="cards__item">
+                <img src="chickensoup.jpg">
+                <p>chicken soup at 150</p>
+            </div>
+            <div class="cards__item">
+                <img src="fruits.jpg">
+                <p>fruits at 100</p>
+            </div>
+            <div class="cards__item">
+                <img src="icecream.jpg">
+                <p>ice cream at 160</p>
+            </div>
+            <div class="cards__item">
+                <img src="lemonjuice.jpg">
+                <p>lemon juice at 56</p>
+            </div>
+            <div class="cards__item">
+                <img src="pasta.jpg">
+                <p>pasta at 120</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="order">
+
+        <div class="container5 ">
+            <div class="contact-box ">
+                <div class="left "></div>
+                <div class="right ">
+                    <h2 class="formhead ">ORDER NOW</h2>
+                    <form action="  https://form.jotform.com/212195157313451 " method="post ">
+                        <input type="text " name="name " class="field " placeholder="Your Name ">
+                        <input type="email " name="emailaddress " class="field " placeholder="Your Email ">
+                        <input type="text " name="mobile " class="field " placeholder="mobile number ">
+
+                        <button class="example_e">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="location py-5" id="location">
+        <div class="text-center">
+            <h3>My Restaurant location</h3>
+        </div>
+        <!--The div element for the map -->
+        <div id="map"></div>
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc6SbRKeu0dZnDiUm82Na_CgI8A2cC-Jk&callback=initMap&libraries=&v=weekly" async></script>
+
+        <script src="smooth-scroll.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*=". "]');
+        </script>
+
+    </section>
+</body>
+
+</html>
